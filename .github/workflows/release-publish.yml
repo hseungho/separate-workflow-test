@@ -57,7 +57,7 @@ jobs:
         run: ./gradlew build --exclude-task test
 
       - name: Rename package
-        run: mv build/libs/FOSSLight*.war FOSSLight.war
+        run: mv build/libs/fosslight-workflow-test-*.war fosslight-workflow-test.war
 
       - name: Upload Release Asset
         id: upload-release-asset
@@ -66,8 +66,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./FOSSLight.war
-          asset_name: FOSSLight.war
+          asset_path: ./fosslight-workflow-test.war
+          asset_name: fosslight-workflow-test.war
           asset_content_type: application/octet-stream
 
   deploy-demo:
