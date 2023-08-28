@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.7 (28/08/2023)
+**Full Changelog**: https://github.com/hseungho/separate-workflow-test/compare/1.1.6...1.1.7
+---
+
 ## 1.1.6 (28/08/2023)
 **Full Changelog**: https://github.com/hseungho/separate-workflow-test/compare/1.1.5...1.1.6
 ---
