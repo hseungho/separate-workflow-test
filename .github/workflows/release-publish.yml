@@ -88,8 +88,8 @@ jobs:
           key: ${{ secrets.REMOTE_SSH_KEY }}
           port: ${{ secrets.REMOTE_SSH_PORT }}
           script: |
-            cd /service/deploy/fosslight/
-            bash /service/deploy/fosslight/deploy.sh
+            whoami
+            echo 'Deploy fin.'
 
   deploy-image:
     needs: deploy-demo
