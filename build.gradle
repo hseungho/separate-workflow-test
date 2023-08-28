@@ -9,10 +9,10 @@ plugins {
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
 
-java {
-    sourceCompatibility = '17'
-}
+bootWar.enabled = true // (1)
+war.enabled = false  // (2)
 
 repositories {
     mavenCentral()
